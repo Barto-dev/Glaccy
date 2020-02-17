@@ -17,27 +17,34 @@
         <li><a>О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-navigation__search"></li>
-        <li class="user-navigation__enter">Вход</li>
-        <li class="user-navigation__empty-basket">2 товара
+        <li class="user-navigation__search">
+          <button aria-label="Поиск" type="button"></button>
+        </li>
+        <li class="user-navigation__enter">
+          <button type="button" name="button">Вход</button></li>
+        <li class="user-navigation__empty-basket"><button type="button" aria-label="Корзина">2 товара</button>
           <table class="basket-items">
             <caption class="basket-items__all-price">Итого: 750 руб.</caption>
               <tr>
-                <td class="basket-items__remove"></td>
+                <td class="basket-items__remove">
+                  <button type="button" aria-label="Удалить товар с корзины"></button>
+                </td>
                 <td class="basket-items__mini-icon"></td>
                 <td>Пломбир с апельсиновым джемом</td>
                 <td>1,5 кг х <span>200 руб.</span></td>
                 <td>300 руб</td>
               </tr>
               <tr>
-                <td class="basket-items__remove"></td>
+                <td class="basket-items__remove">
+                  <button type="button" aria-label="Удалить товар с корзины"></button>
+                </td>
                 <td class="basket-items__mini-icon"></td>
                 <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td>1,5 кг х <span>300 руб.</span></td>
                 <td>450 руб</td>
               </tr>
           </table>
-          <!-- TODO: кнопка -->
+          <a href="pay">Оформить заказ</a>
         </li>
       </ul>
     </nav>
@@ -146,16 +153,28 @@
 
     <footer class="main-footer">
       <ul class="footer-social">
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li>
+          <a href="twitter.com">
+            <img src="img/twitter.svg" alt="Твиттер" width="38" height="38">
+          </a>
+        </li>
+        <li><a href="instagram.com">
+          <img src="img/instagram.svg" alt="Инстаграм" width="38" height="38">
+        </a>
+      </li>
+        <li><a href="facebook.com">
+          <img src="img/facebook.svg" alt="Фейсбук" width="38" height="38">
+        </a>
+      </li>
+        <li><a href="vk.com"><img src="img/vk.svg" alt="Контакт" width="38" height="38">
+        </a>
+      </li>
       </ul>
       <ul class="footer-about-us">
-        <li><a href=" "></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href=" ">Для поставщиков</a></li>
+        <li><a href="">О производстве</a></li>
+        <li><a href="">Наши документы</a></li>
+        <li><a href="">Экологические стандарты</a></li>
       </ul>
       <p>Сделал Wandering Wisp</p>
     </footer>
