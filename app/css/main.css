@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -121,19 +122,117 @@ a {
   line-height: 22px;
   font-weight: 700; }
 
-.product-list * {
-  border: 1px solid #000; }
-
 .product-list__items {
   list-style: none; }
 
-.icecream a {
+.icecream p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   text-decoration: underline;
   color: #ffffff; }
 
-.icecream img {
-  border-radius: 50%;
+.icecream-price {
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  text-decoration: none; }
+
+.about-us {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  background-color: #ebdfc4;
+  background-image: url(../img/pattern-1.jpg);
+  background-repeat: no-repeat; }
+
+.about-us h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500; }
+
+.new-in-blog {
+  color: #323232;
+  background-color: #fff;
+  background-image: url(../img/strawberry-background.jpg);
+  background-repeat: no-repeat; }
+
+.new-in-blog h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500; }
+
+.new-in-blog a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: underline; }
+
+.subscribe-email {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  background-color: #f8f7f4; }
+
+.subscribe-email fieldset {
+  border: none; }
+
+.how-to-get {
+  background-color: #d2c8ad;
+  background-image: url(../img/map.jpg);
+  color: #323232; }
+
+.adress-form span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400; }
+
+.adress-form b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700; }
+
+span.working-time {
+  line-height: 22px; }
+
+b.phone-number {
+  line-height: 22px; }
+
+.main-footer {
+  color: #fefefe; }
+
+.footer-social,
+.footer-about-us {
+  list-style: none; }
+
+.main-footer a {
+  color: #fefefe;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400; }
+
+.main-footer p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
+  font-weight: 400; }
+
+/*Форма обратной связи*/
+.feedback-modal-window {
+  background-color: #f8f7f4;
+  color: #323232; }
+
+/*Авторизация*/
+.form-of-authorization {
+  background-color: #f8f7f4; }
+
+.form-of-authorization a {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: underline; }
+
+.form-of-authorization fieldset {
   border: none; }

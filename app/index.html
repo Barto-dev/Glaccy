@@ -81,28 +81,28 @@
         <li class="icecream">
           <a href="/" class="choise-icecream">
             <img src="img/icecream-1.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
-            <span class="ice-cream-price">310р/кг</span>
+            <span class="icecream-price">310р/кг</span>
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
-            <span class="ice-cream-price">310р/кг</span>
+            <span class="icecream-price">310р/кг</span>
             <p>Сливочно-кофейное с кусочками шоколада</p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-3.jpg" alt="Сливочно-клубничное с присыпкой" width="267" height="267">
-            <span class="ice-cream-price">310р/кг</span>
+            <span class="icecream-price">310р/кг</span>
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-4.jpg" alt="Сливочное крем брюле" width="267" height="267">
-            <span class="ice-cream-price">310р/кг</span>
+            <span class="icecream-price">310р/кг</span>
             <p>Сливочное крем-брюле с карамельной подливкой</p>
           </a>
         </li>
@@ -128,8 +128,8 @@
       <form action="navigation__enter">
         <fieldset>
           <legend class="visually-hidden">Подписка на рассылку</legend>
-          <label for="subscribe-email-form" class="visually hidden">Форма для eMail адреса</label>
-          <input id="subscribe-email-form" type="email">
+          <label for="subscribe-email-form" class="visually-hidden">Форма для eMail адреса</label>
+          <input id="subscribe-email-form" type="email" placeholder="Электронная почта">
           <button type="submit" name="button" class="button">Отправить</button>
         </fieldset>
       </form>
@@ -137,15 +137,15 @@
 
     <section class="how-to-get">
       <h2 class="visually-hidden">Адрес</h2>
-      <p>
-      <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430">
+      <div class="adress-form">
+      <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430" class="visually-hidden">
         <span>Адрес главного офиса и офлайн-магазина:</span>
         <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
         <span>Для заказов по телефону:</span>
-        <b>8 812 450-25-25</b>
-        <span>(с 10 до 20 ежедневно)</span>
-      </p>
-      <button type="button" name="button" class="button">Форма обратной связи</button>
+        <b class="phone-number">8 812 450-25-25</b>
+        <span class="working-time">(с 10 до 20 ежедневно)</span>
+        <button type="button" name="button" class="button">Форма обратной связи</button>
+      </div>
     </section>
 
     <footer class="main-footer">
@@ -173,7 +173,8 @@
         <li><a href="">Наши документы</a></li>
         <li><a href="">Экологические стандарты</a></li>
       </ul>
-      <p>Сделал Wandering Wisp</p>
+      <img src="img/wisp.png" alt="developer-logo" width="40" height="40">
+      <p>By Wandering Wisp</p>
     </footer>
 
     <section class="feedback-modal-window">
@@ -186,19 +187,19 @@
         <input id="feedback-user-email" type="email" name="email" value="" placeholder="Ваша почта для ответа?">
         <label for="feedback-text" class="visually-hidden">Текст отзыва</label>
         <textarea id="feedback-text" name="you-feedback" rows="8" cols="80" placeholder="Напишите что нибудь..."></textarea>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button">Отправить</button>
       </form>
     </section>
 
     <div class="form-of-authorization">
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
-          <legend>Авторизация</legend>
+          <legend class="visually-hidden">Авторизация</legend>
           <label for="authorization-email" class="visually-hidden">Email</label>
-          <input id="authorization-email" type="email" name="name" value="">
+          <input id="authorization-email" type="email" name="name" value="" placeholder="Электронная почта">
           <label for="authorization-password" class="visually-hidden">Пароль</label>
-          <input id="authorization-password" type="password" name="password" value="">
-          <button type="submit" name="button">Войти</button>
+          <input id="authorization-password" type="password" name="password" value="" placeholder="Пароль">
+          <button type="submit" name="button" class="button">Войти</button>
           <a href="">Забыли пароль?</a>
           <a href="">Новая регистрация</a>
         </fieldset>

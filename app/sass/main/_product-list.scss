@@ -1,12 +1,12 @@
-.product-list * {
-  border: 1px solid #000;
+.product-list {
+
 }
 
 .product-list__items {
   list-style: none;
 }
 
-.icecream a {
+.icecream p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -14,7 +14,10 @@
   color: $white;
 }
 
-.icecream img {
-  border-radius: 50%;
-  border: none;
+.icecream-price {
+  color: $white;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  text-decoration: none;
 }
