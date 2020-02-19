@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto',Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background: url(../img/promoaction-1.png);
+  background-color: #87a092;
+
+  background-position: center 50px;
+  background-repeat: no-repeat;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
