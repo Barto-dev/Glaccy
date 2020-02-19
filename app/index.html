@@ -44,64 +44,65 @@
     <h1 class="visually-hidden">Магазин мороженного Glaccy Shop</h1>
 
     <div class="good-deal">
-      <h2 class="good-deal__name">Крем-брюле и пломбир с малиновым джемом</h2>
+      <h2 class="visually-hidden">Лучшие предложения</h2>
+      <h3 class="good-deal__name">Крем-брюле и пломбир с малиновым джемом</h3>
       <!-- <img src="img/promoaction-1.png" alt="Промоакция-1" width="1045" height="881"> -->
       <a href="" class="button good-deal__button">Давайте оба</a>
       <ul class="slider-menu">
-        <li class="good-deal__slider-button">
-          <button class="slider-menu_button" aria-label="Первый слайд"></button>
+        <li class="slider-menu__item">
+          <button class="slider-menu__button" aria-label="Первый слайд"></button>
         </li>
-        <li class="good-deal__slider-button">
-          <button class="slider-menu_button" aria-label="Второй слайд"></button>
+        <li class="slider-menu__item">
+          <button class="slider-menu__button" aria-label="Второй слайд"></button>
         </li>
-        <li class="good-deal__slider-button">
-          <button class="slider-menu_button" aria-label="Третий слайд"></button>
+        <li class="slider-menu__item">
+          <button class="slider-menu__button" aria-label="Третий слайд"></button>
         </li>
       </ul>
     </div>
 
     <section class="first-promotion">
-      <h2 class="first-promotion-name">Малинка даром!</h2>
-      <p class="first-promotion-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+      <h2 class="first-promotion__name">Малинка даром!</h2>
+      <p class="first-promotion__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
       </p>
       <a href="" class="button promotion-button">Хочу варенье! </a>
     </section>
 
     <section class="second-promotion">
-      <h2 class="second-promotion-name">Шоколадки даром!</h2>
-      <p class="second-promotion-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+      <h2 class="second-promotion__name">Шоколадки даром!</h2>
+      <p class="second-promotion__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
       <a href="" class="button promotion-button">Хочу шоколадки!</a>
     </section>
 
     <section class="product-list">
       <h2 class="visually-hidden">Список мороженого</h2>
-      <ul class="product-list-items">
+      <ul class="product-list__items">
         <li class="icecream">
           <a href="/" class="choise-icecream">
             <img src="img/icecream-1.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
-            <span class="ice-cream-price"></span>
+            <span class="ice-cream-price">310р/кг</span>
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
-            <span class="ice-cream-price"></span>
+            <span class="ice-cream-price">310р/кг</span>
             <p>Сливочно-кофейное с кусочками шоколада</p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-3.jpg" alt="Сливочно-клубничное с присыпкой" width="267" height="267">
-            <span class="ice-cream-price"></span>
+            <span class="ice-cream-price">310р/кг</span>
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-4.jpg" alt="Сливочное крем брюле" width="267" height="267">
-            <span class="ice-cream-price"></span>
+            <span class="ice-cream-price">310р/кг</span>
             <p>Сливочное крем-брюле с карамельной подливкой</p>
           </a>
         </li>
@@ -128,8 +129,8 @@
         <fieldset>
           <legend class="visually-hidden">Подписка на рассылку</legend>
           <label for="subscribe-email-form" class="visually hidden">Форма для eMail адреса</label>
-          <input id="subscribe-email-form" type="email" class="button">
-          <button type="submit" name="button">Отправить</button>
+          <input id="subscribe-email-form" type="email">
+          <button type="submit" name="button" class="button">Отправить</button>
         </fieldset>
       </form>
     </div>
@@ -144,7 +145,7 @@
         <b>8 812 450-25-25</b>
         <span>(с 10 до 20 ежедневно)</span>
       </p>
-      <button type="button" name="button">Форма обратной связи</button>
+      <button type="button" name="button" class="button">Форма обратной связи</button>
     </section>
 
     <footer class="main-footer">

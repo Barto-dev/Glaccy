@@ -1,0 +1,25 @@
+.good-deal__name {
+  font-size: 60px;
+  line-height: 60.35px;
+  text-align: center;
+}
+
+.good-deal a {
+  color: $white;
+}
+
+.slider-menu {
+  list-style: none;
+}
+
+.slider-menu__button {
+  background-color: transparent;
+  border: 1px solid $white;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.slider-menu__button:focus {
+  background-color: #fff;
+  outline: none;
+}

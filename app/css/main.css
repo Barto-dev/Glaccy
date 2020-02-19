@@ -21,6 +21,11 @@ a {
   height: 1px;
   margin: -1px; }
 
+.button {
+  color: #fff;
+  background-color: #ee613f;
+  border: none; }
+
 .main-header {
   color: #ffffff; }
 
@@ -41,7 +46,8 @@ a {
 
 .user-navigation button {
   color: #ffffff;
-  background-color: #9db1a5;
+  background-color: transparent;
+  border: none;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500; }
@@ -63,3 +69,71 @@ a {
 
 .dropdown-list {
   display: none; }
+
+.good-deal__name {
+  font-size: 60px;
+  line-height: 60.35px;
+  text-align: center; }
+
+.good-deal a {
+  color: #ffffff; }
+
+.slider-menu {
+  list-style: none; }
+
+.slider-menu__button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  height: 13px;
+  border-radius: 50%; }
+
+.slider-menu__button:focus {
+  background-color: #fff;
+  outline: none; }
+
+.first-promotion {
+  background-color: #c1264c;
+  background-image: url(../img/rapsberry-background1.jpg);
+  background-repeat: no-repeat; }
+
+.first-promotion__name {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700; }
+
+.first-promotion__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700; }
+
+.second-promotion {
+  background-color: #432719;
+  background-image: url(../img/chocolate-background.jpg);
+  background-repeat: no-repeat; }
+
+.second-promotion__name {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700; }
+
+.second-promotion__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700; }
+
+.product-list * {
+  border: 1px solid #000; }
+
+.product-list__items {
+  list-style: none; }
+
+.icecream a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #ffffff; }
+
+.icecream img {
+  border-radius: 50%;
+  border: none; }
