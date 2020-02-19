@@ -1,0 +1,51 @@
+.main-header {
+  color:$white;
+}
+
+.site-navigation,
+.user-navigation,
+.dropdown-list {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: $white;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  color:#333333;
+  background-color: #f7f6f3;
+}
+
+.user-navigation button {
+  color: $white;
+  background-color: #9db1a5;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.user-navigation button:hover,
+.user-navigation button:focus {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.main-header__work-time {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.main-header__phone-number {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.dropdown-list {
+  display: none;
+}
