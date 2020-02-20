@@ -1,0 +1,29 @@
+.catalog-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+
+  color: $white;
+}
+
+.filter {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  color: $white;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter__button {
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+}

@@ -27,6 +27,12 @@ a {
   background-color: #ee613f;
   border: none; }
 
+.inner-page {
+  background-image: none;
+  background-image: url(../img/backlight.png);
+  background-position: 0 0;
+  background-repeat: repeat-x; }
+
 .main-header {
   color: #ffffff; }
 
@@ -236,3 +242,86 @@ b.phone-number {
 
 .form-of-authorization fieldset {
   border: none; }
+
+.current-page,
+a.current-page:hover {
+  background-color: #d07058;
+  color: #ffffff; }
+
+button.user-navigation__basket {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #323232;
+  background-color: #f7f6f3; }
+
+.basket-table {
+  background-color: #f8f7f4; }
+
+.basket-items__all-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700; }
+
+.basket-items {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232; }
+
+.basket-items td span {
+  color: #999999; }
+
+.breadcrumbs {
+  list-style: none;
+  color: #ffffff; }
+
+.breadcrumbs a, .breadcrumbs li {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff; }
+
+.catalog-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff; }
+
+.filter {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff; }
+
+.filter fieldset {
+  border: none; }
+
+.filter ul {
+  list-style: none; }
+
+.filter__button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff; }
+
+.all-creamy-icecream {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff; }
+
+.all-creamy-icecream p {
+  text-decoration: underline; }
+
+.all-creamy-icecream ul {
+  list-style: none; }
+
+.pagination-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff; }
+
+.pagination-item-current {
+  color: #323232; }

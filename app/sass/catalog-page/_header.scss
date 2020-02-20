@@ -1,0 +1,55 @@
+.current-page,
+a.current-page:hover {
+  background-color: #d07058;
+  color: $white;
+}
+
+
+
+
+button.user-navigation__basket  {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.basket-table {
+  background-color: #f8f7f4;
+}
+
+.basket-items__all-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+
+}
+
+.basket-items {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: #323232;
+
+}
+
+.basket-items td span {
+  color: #999999;
+}
+
+.breadcrumbs {
+  list-style: none;
+  color: $white;
+}
+
+.breadcrumbs a, .breadcrumbs li {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: $white;
+
+}

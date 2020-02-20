@@ -1,0 +1,27 @@
+.all-creamy-icecream {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+
+  color: $white;
+}
+
+.all-creamy-icecream p {
+  text-decoration: underline;
+}
+
+.all-creamy-icecream ul {
+  list-style: none;
+}
+
+.pagination-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  color: $white;
+}
+
+.pagination-item-current {
+  color: #323232;
+}
