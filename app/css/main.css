@@ -517,12 +517,17 @@ fieldset {
   list-style: none; }
 
 .pagination-list {
+  width: 230px;
   margin: 0;
   padding: 0;
-  text-align: right;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #ffffff; }
 
 .pagination-item-current {
@@ -543,6 +548,9 @@ fieldset {
 .icecream-item {
   width: 267px;
   margin-right: 26px; }
+
+.icecream-item img {
+  height: 267px; }
 
 .icecream-item:nth-child(4n) {
   margin-right: 0; }
