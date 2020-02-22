@@ -2,6 +2,8 @@
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 
   color: $white;
 }
@@ -10,12 +12,52 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-
-  color: $white;
+  margin-bottom: 50px;
 }
 
-.filter fieldset {
+.filter-list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-list-item:nth-child(1) {
+  width: 194px;
+}
+
+.filter-list-item:nth-child(2) {
+  width: 220px;
+}
+
+.filter-list-item:nth-child(3) {
+  width: 417px;
+}
+
+.filter-list-item:nth-child(4) {
+  width: 704px;
+}
+
+.form-filter {
+  width: 863px;
+}
+
+.fat-value-list,.filler-list{
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+
+
+  fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter ul {

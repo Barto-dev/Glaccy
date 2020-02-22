@@ -1,8 +1,10 @@
 
-// Переменные
+//Переменные
 @import "variables";
+//Обертки
+@import "wrappers";
 
-// Стили index.html
+//Стили index.html
 @import "general";
 @import "header/main-header";
 @import "main/good-deal";

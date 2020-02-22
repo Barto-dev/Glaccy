@@ -9,61 +9,65 @@
 </head>
 <body class="inner-page">
 
-  <header class="main-header">
-    <a href="index.html">
-      <img src="img/logo.svg" alt="Логотип Glaccy Shop" class="main-header__logo" width="165" height="64">
-    </a>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a class="current-page">Каталог</a></li>
-        <li><a>Доставка и оплата</a></li>
-        <li><a>О Компании</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="user-navigation__search">
-          <button aria-label="Поиск" type="button"></button>
+  <header class="main-header container">
+    <div class="header-wrapper no-gutters">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="Логотип Glaccy Shop" class="main-header__logo" width="165" height="64">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a class="current-page">Каталог</a></li>
+          <li><a>Доставка и оплата</a></li>
+          <li><a>О Компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation__search">
+            <button aria-label="Поиск" type="button"></button>
+          </li>
+          <li class="user-navigation__enter">
+            <button type="button" name="button">Вход</button></li>
+          <li><button type="button" aria-label="Корзина" class="user-navigation__basket">2 товара</button>
+            <div class="basket-table visually-hidden">
+              <table class="basket-items">
+                <caption class="basket-items__all-price">Итого: 750 руб.</caption>
+                <tr>
+                  <td class="basket-items__remove">
+                    <button type="button" aria-label="Удалить товар с корзины"></button>
+                  </td>
+                  <td class="basket-items__mini-icon"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span>200 руб.</span></td>
+                  <td>300 руб</td>
+                </tr>
+                <tr>
+                  <td class="basket-items__remove">
+                    <button type="button" aria-label="Удалить товар с корзины"></button>
+                  </td>
+                  <td class="basket-items__mini-icon"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span>300 руб.</span></td>
+                  <td>450 руб</td>
+                </tr>
+              </table>
+              <a href="pay" class="button">Оформить заказ</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="breadcrumbs-wrapper">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li>
+          <a href="catalog.html">Каталог</a>
         </li>
-        <li class="user-navigation__enter">
-          <button type="button" name="button">Вход</button></li>
-        <li><button type="button" aria-label="Корзина" class="user-navigation__basket">2 товара</button>
-          <div class="basket-table visually-hidden">
-          <table class="basket-items">
-            <caption class="basket-items__all-price">Итого: 750 руб.</caption>
-              <tr>
-                <td class="basket-items__remove">
-                  <button type="button" aria-label="Удалить товар с корзины"></button>
-                </td>
-                <td class="basket-items__mini-icon"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х <span>200 руб.</span></td>
-                <td>300 руб</td>
-              </tr>
-              <tr>
-                <td class="basket-items__remove">
-                  <button type="button" aria-label="Удалить товар с корзины"></button>
-                </td>
-                <td class="basket-items__mini-icon"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х <span>300 руб.</span></td>
-                <td>450 руб</td>
-              </tr>
-          </table>
-          <a href="pay" class="button">Оформить заказ</a>
-          </div>
-        </li>
+        <li>Сливочное</li>
       </ul>
-    </nav>
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li>
-        <a href="catalog.html">Каталог</a>
-      </li>
-      <li>Сливочное</li>
-    </ul>
-    <p>
-      <span class="main-header__work-time">С 10 до 20, ежедневно</span>
-      <span class="main-header__phone-number">8 812 450-25-25</span>
-     </p>
+      <p>
+        <span class="main-header__work-time">С 10 до 20, ежедневно</span>
+        <span class="main-header__phone-number">8 812 450-25-25</span>
+      </p>
+    </div>
   </header>
 
   <main class="container">
@@ -71,7 +75,9 @@
 
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form action="https://echo.htmlacademy.ru" class="filter" method="get">
+      <form action="https://echo.htmlacademy.ru" class="form-filter" method="get">
+        <ul class="filter-list">
+          <li class="filter-list-item">
         <fieldset>
           <legend>Сортировка</legend>
           <select name="sort">
@@ -81,14 +87,18 @@
             <option value="fat-first">По жирности</option>
           </select>
         </fieldset>
+        </li>
+        <li class="filter-list-item">
         <fieldset>
           <legend>Цена 100руб-500руб</legend>
           <label for="filter-price-range" class="visually-hidden">Диапазон цен</label>
           <input type="range" id="filter-price-range">
         </fieldset>
+        </li>
+        <li class="filter-list-item">
         <fieldset>
           <legend>Жирность</legend>
-          <ul>
+          <ul class="fat-value-list">
             <li class="fat-value">
               <label><input type="radio" name="fat-value" value="0%">0%</label>
             </li>
@@ -103,9 +113,11 @@
             </li>
           </ul>
         </fieldset>
+        </li>
+        <li class="filter-list-item">
         <fieldset>
           <legend>Наполнители</legend>
-          <ul>
+          <ul class="filler-list">
             <li class="filler">
               <label><input type="checkbox" name="chocolate" checked>Шоколадные</label>
             </li>
@@ -123,7 +135,11 @@
             </li>
           </ul>
         </fieldset>
+        </li>
+        <li class="filter-list-item">
         <button class="filter__button" type="submit">Применить</button>
+        </li>
+        </ul>
       </form>
     </section>
 
@@ -237,8 +253,10 @@
         <li><a href="">Наши документы</a></li>
         <li><a href="">Экологические стандарты</a></li>
       </ul>
-      <img src="img/wisp.png" alt="developer-logo" width="40" height="40">
-      <p>By Wandering Wisp</p>
+      <p>
+        <img src="img/wisp.png" alt="developer-logo" width="40" height="40">
+        <span>By Wandering Wisp</span>
+      </p>
     </footer>
 
   </main>

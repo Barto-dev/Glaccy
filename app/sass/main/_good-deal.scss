@@ -4,12 +4,27 @@
   text-align: center;
 }
 
+.good-deal {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 36px;
+}
+
 .good-deal a {
+  width: 100px;
   color: $white;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .slider-menu {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: flex-end;
 }
 
 .slider-menu__button {

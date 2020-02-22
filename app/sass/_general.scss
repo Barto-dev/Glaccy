@@ -1,6 +1,25 @@
+*, *::before, *::after {
+box-sizing:inherit;
+}
+
+html {
+  box-sizing:border-box;
+}
+
+content-box-component {
+  box-sizing:content-box;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 
   font-family: 'Roboto',Arial, sans-serif;
   font-size: 16px;

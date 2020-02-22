@@ -12,7 +12,8 @@
 <body>
 
 
-  <header class="main-header">
+  <header class="main-header container">
+    <div class="header-wrapper no-gutters">
     <img src="img/logo.svg" alt="Логотип Glaccy Shop" class="main-header__logo" width="165" height="64">
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -28,14 +29,17 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
+
       <ul class="user-navigation">
         <li class="user-navigation__search"><button>Поиск</button></li>
         <li class="user-navigation__enter"><button>Вход</button></li>
         <li class="user-navigation__empty-basket"><button>Пусто</button></li>
       </ul>
     </nav>
+    </div>
     <p>
       <span class="main-header__work-time">С 10 до 20, ежедневно</span>
+      <br>
       <span class="main-header__phone-number">8 812 450-25-25</span>
      </p>
   </header>
@@ -43,11 +47,14 @@
   <main class="container">
     <h1 class="visually-hidden">Магазин мороженного Glaccy Shop</h1>
 
-    <div class="good-deal">
+      <div class="good-deal">
       <h2 class="visually-hidden">Лучшие предложения</h2>
-      <h3 class="good-deal__name">Крем-брюле и пломбир с малиновым джемом</h3>
-      <!-- <img src="img/promoaction-1.png" alt="Промоакция-1" width="1045" height="881"> -->
-      <a href="" class="button good-deal__button">Давайте оба</a>
+      <div class="good-deal-wrapper">
+        <h3 class="good-deal__name">Крем-брюле и пломбир с малиновым джемом
+        </h3>
+        <!-- <img src="img/promoaction-1.png" alt="Промоакция-1" width="1045" height="881"> -->
+        <a href="" class="button good-deal__button">Давайте оба</a>
+      </div>
       <ul class="slider-menu">
         <li class="slider-menu__item">
           <button class="slider-menu__button" aria-label="Первый слайд"></button>
@@ -61,19 +68,21 @@
       </ul>
     </div>
 
-    <section class="first-promotion">
-      <h2 class="first-promotion__name">Малинка даром!</h2>
-      <p class="first-promotion__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-      </p>
-      <a href="" class="button promotion-button">Хочу варенье! </a>
-    </section>
+    <div class="two-col-wrapper">
+      <section class="first-promotion">
+        <h2 class="first-promotion__name">Малинка даром!</h2>
+        <p class="first-promotion__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+        </p>
+        <a href="" class="button promotion-button">Хочу варенье! </a>
+      </section>
 
-    <section class="second-promotion">
-      <h2 class="second-promotion__name">Шоколадки даром!</h2>
-      <p class="second-promotion__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-      </p>
-      <a href="" class="button promotion-button">Хочу шоколадки!</a>
-    </section>
+      <section class="second-promotion">
+        <h2 class="second-promotion__name">Шоколадки даром!</h2>
+        <p class="second-promotion__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+        </p>
+        <a href="" class="button promotion-button">Хочу шоколадки!</a>
+      </section>
+    </div>
 
     <section class="product-list">
       <h2 class="visually-hidden">Список мороженого</h2>
@@ -111,12 +120,19 @@
 
     <section class="about-us">
       <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-      <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-      <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-      <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-      <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      <div class="about-us-wrapper">
+        <div>
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </div>
+        <div>
+          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </div>
+        </div>
     </section>
 
+    <div class="two-col-wrapper">
     <div class="new-in-blog">
       <h2>Новое в нашем блоге</h2>
       <a>10 способов сервировки фруктовых щербетов к столу</a>
@@ -133,6 +149,7 @@
           <button type="submit" name="button" class="button">Отправить</button>
         </fieldset>
       </form>
+    </div>
     </div>
 
     <section class="how-to-get">
@@ -173,8 +190,10 @@
         <li><a href="">Наши документы</a></li>
         <li><a href="">Экологические стандарты</a></li>
       </ul>
-      <img src="img/wisp.png" alt="developer-logo" width="40" height="40">
-      <p>By Wandering Wisp</p>
+      <p>
+        <img src="img/wisp.png" alt="developer-logo" width="40" height="40">
+        <span>By Wandering Wisp</span>
+      </p>
     </footer>
 
     <section class="feedback-modal-window">

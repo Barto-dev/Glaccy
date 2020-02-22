@@ -3,7 +3,13 @@
 }
 
 .product-list__items {
+  padding: 0;
+  margin: 0 auto;
   list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icecream p {
@@ -14,6 +20,9 @@
   color: $white;
 }
 
+.icecream {
+  width: 267px;
+}
 .icecream-price {
   color: $white;
   font-size: 45px;
