@@ -27,14 +27,19 @@
 }
 
 .main-header__logo {
+  margin: 0;
+  margin-top: 14px;
+  margin-right: 24px;
   width: 165px;
   height: 64px;
+
 }
 
 .site-navigation,
 .user-navigation,
 .dropdown-list {
   list-style: none;
+
 }
 
 .site-navigation a {
@@ -47,17 +52,33 @@
 .site-navigation a:focus{
   color:#333333;
   background-color: #f7f6f3;
+  border-radius: 35px;
 }
 
 .site-navigation {
   margin: 0;
+  margin-top: 22px;
   padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.site-navigation a {
+  display: block;
+  margin: 0;
+  padding: 10px 14px;
 }
 
 .user-navigation {
   margin: 0;
   padding: 0;
   margin-left: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+  // background-color: rgba(24,232,21, 0.1);
 }
 
 .user-navigation button {
@@ -69,6 +90,23 @@
   font-weight: 500;
 
   padding: 0;
+}
+
+.user-navigation li:first-child {
+  background-color:rgba(255,255,255, 0.2);
+  border-radius: 50%;
+
+}
+
+.user-navigation__search {
+  height: 33px;
+  width: 33px;
+  background-image: url(../img/loup2.svg);
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+
 }
 
 .user-navigation button:hover,

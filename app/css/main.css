@@ -25,7 +25,8 @@
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  background-color: #fff; }
 
 content-box-component {
   -webkit-box-sizing: content-box;
@@ -113,6 +114,9 @@ a {
   width: 969px; }
 
 .main-header__logo {
+  margin: 0;
+  margin-top: 14px;
+  margin-right: 24px;
   width: 165px;
   height: 64px; }
 
@@ -129,16 +133,37 @@ a {
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #333333;
-  background-color: #f7f6f3; }
+  background-color: #f7f6f3;
+  border-radius: 35px; }
 
 .site-navigation {
   margin: 0;
-  padding: 0; }
+  margin-top: 22px;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.site-navigation a {
+  display: block;
+  margin: 0;
+  padding: 10px 14px; }
 
 .user-navigation {
   margin: 0;
   padding: 0;
-  margin-left: auto; }
+  margin-left: auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .user-navigation button {
   color: #ffffff;
@@ -148,6 +173,17 @@ a {
   line-height: 16px;
   font-weight: 500;
   padding: 0; }
+
+.user-navigation li:first-child {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%; }
+
+.user-navigation__search {
+  height: 33px;
+  width: 33px;
+  background-image: url(../img/loup2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0; }
 
 .user-navigation button:hover,
 .user-navigation button:focus {
