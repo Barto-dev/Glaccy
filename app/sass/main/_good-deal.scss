@@ -1,40 +1,65 @@
 .good-deal__name {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
   font-size: 60px;
   line-height: 60.35px;
   text-align: center;
 }
 
 .good-deal {
+  margin: 0;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 36px;
+
+  margin-bottom: 40px;
 }
 
-.good-deal a {
-  width: 100px;
+.good-deal__button {
+  width: 279.538px;
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  padding: 10px 46px 10px 45px;
+  border-radius: 40px;
   color: $white;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .slider-menu {
   list-style: none;
-  padding: 0;
   margin: 0;
+  margin-right: 154px;
+  margin-bottom: 19px;
+  padding: 0;
+
   align-self: flex-end;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
 
 .slider-menu__button {
+  cursor: pointer;
+  margin: 0;
+  margin-right: 8px;
   background-color: transparent;
   border: 1px solid $white;
-  height: 13px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
-.slider-menu__button:focus {
-  background-color: #fff;
+.slider-menu__button:focus,
+.slider-menu__button:hover {
+  background-color: rgba(#ffffff, 0.4);
   outline: none;
+}
+
+.slider-menu__button:active {
+  background-color: #fff;
 }
