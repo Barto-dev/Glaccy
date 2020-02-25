@@ -1,14 +1,76 @@
 .about-us {
+  margin: 0;
+  padding: 0;
+  padding: 25px 30px 0 20px;
+  border-radius: 20px;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
   background-color: #ebdfc4;
   background-image: url(../img/pattern-1.jpg);
-  
 }
 
 .about-us h2 {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+}
+
+.about-us p {
+  position: relative;
+}
+
+.pseudo-icecream,.pseudo-cow {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+.about-us__first-column, .about-us__second-column {
+  width: 540px;
+  padding: 0;
+  // padding: 15px 40px 15px 58px;
+  padding-left: 58px;
+}
+
+.pseudo-icecream::before {
+  content: "";
+  position: absolute;
+  top:-20px;
+  left: -57px;
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/pseudo-icecream.svg);
+}
+
+.pseudo-letter::before {
+  content: "";
+  position: absolute;
+  top:-20px;
+  left: -57px;
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/pseudo-letter.svg);
+}
+
+.pseudo-cow::before {
+  content: "";
+  position: absolute;
+  top:-20px;
+  left: -57px;
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/pseudo-cow.svg);
+}
+
+.pseudo-thermometer::before {
+  content: "";
+  position: absolute;
+  top:-20px;
+  left: -57px;
+  width: 49px;
+  height: 49px;
+  background-image: url(../img/pseudo-thermometer.svg);
 }

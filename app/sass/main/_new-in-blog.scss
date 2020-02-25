@@ -1,4 +1,10 @@
 .new-in-blog {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-left: 19px;
+  padding-right: 250px;
+  border-radius: 20px;
   width: 560px;
   color: #323232;
   background-color: #fff;
@@ -7,12 +13,19 @@
 }
 
 .new-in-blog h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
 }
 
 .new-in-blog a {
+  display: block;
+  margin: 0;
+  margin-bottom: 75px;
+  color: inherit;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;

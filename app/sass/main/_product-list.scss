@@ -1,5 +1,6 @@
 .product-list {
-
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .product-list__items {
@@ -9,21 +10,48 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.choise-icecream {
+  position: relative;
+}
+
+.choise-icecream::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/hit-product.svg);
+  background-repeat: no-repeat;
 }
 
 .icecream p {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  text-decoration: underline;
+  text-align: center;
+  // text-decoration: underline;
   color: $white;
+}
+
+.icecream p span {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.icecream img {
+  border-radius: 50%;
 }
 
 .icecream {
   width: 267px;
 }
 .icecream-price {
+  position: absolute;
+  bottom:20px;
+  left: 0;
+
   color: $white;
   font-size: 45px;
   line-height: 45px;

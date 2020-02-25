@@ -45,7 +45,8 @@
      </p>
   </header>
 
-  <main class="container">
+  <main>
+    <div class="container">
     <h1 class="visually-hidden">Магазин мороженного Glaccy Shop</h1>
 
       <div class="good-deal">
@@ -65,7 +66,7 @@
         <h3 class="good-deal__name">Крем-брюле и пломбир <br> с малиновым джемом
         </h3>
         <!-- <img src="img/promoaction-1.png" alt="Промоакция-1" width="1045" height="881"> -->
-        <a href="" class="button good-deal__button">Давайте оба</a>
+        <a href="" class="button good-deal__button">Давайте оба!</a>
       </div>
     </div>
 
@@ -92,28 +93,28 @@
           <a href="/" class="choise-icecream">
             <img src="img/icecream-1.jpg" alt="Сливочное с апельсиновым джемом" width="267" height="267">
             <span class="icecream-price">310р/кг</span>
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <p><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
-            <span class="icecream-price">310р/кг</span>
-            <p>Сливочно-кофейное с кусочками шоколада</p>
+            <span class="icecream-price">380р/кг</span>
+            <p><span>Сливочно-кофейное с кусочками шоколада</span></p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-3.jpg" alt="Сливочно-клубничное с присыпкой" width="267" height="267">
-            <span class="icecream-price">310р/кг</span>
-            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <span class="icecream-price">355р/кг</span>
+            <p><span>Сливочно-клубничное с присыпкой из белого шоколада</span></p>
           </a>
         </li>
         <li class="icecream">
           <a href="" class="choise-icecream">
             <img src="img/icecream-4.jpg" alt="Сливочное крем брюле" width="267" height="267">
-            <span class="icecream-price">310р/кг</span>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
+            <span class="icecream-price">415р/кг</span>
+            <p><span>Сливочное крем-брюле с карамельной подливкой</span></p>
           </a>
         </li>
       </ul>
@@ -122,13 +123,13 @@
     <section class="about-us">
       <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
       <div class="about-us-wrapper">
-        <div>
-          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        <div class="about-us__first-column">
+          <p class="pseudo-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <p class="pseudo-letter">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </div>
-        <div>
-          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="about-us__second-column">
+          <p class="pseudo-cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="pseudo-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>
         </div>
     </section>
@@ -136,10 +137,12 @@
     <div class="two-col-wrapper">
     <div class="new-in-blog">
       <h2>Новое в нашем блоге</h2>
-      <a>10 способов сервировки фруктовых щербетов к столу</a>
+      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </div>
 
+  <div class="repeat-gradient-wrapper">
     <div class="subscribe-email">
+
       <h2 class="visually-hidden">Подписка на email рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
       <form action="navigation__enter">
@@ -150,6 +153,8 @@
           <button type="submit" name="button" class="button">Отправить</button>
         </fieldset>
       </form>
+      </div>
+    </div>
     </div>
     </div>
 
@@ -157,8 +162,8 @@
       <h2 class="visually-hidden">Адрес</h2>
       <div class="adress-form">
       <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430" class="visually-hidden">
-        <span>Адрес главного офиса и офлайн-магазина:</span>
-        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+        <span>Адрес главного офиса и<br> офлайн-магазина:</span>
+        <b class="how-to-get__adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
         <span>Для заказов по телефону:</span>
         <b class="phone-number">8 812 450-25-25</b>
         <span class="working-time">(с 10 до 20 ежедневно)</span>
@@ -166,38 +171,38 @@
       </div>
     </section>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <ul class="footer-social">
         <li>
           <a href="twitter.com">
-            <img src="img/twitter.svg" alt="Твиттер" width="38" height="38">
+            <img src="img/twitter.svg" alt="Твиттер" width="32" height="32">
           </a>
         </li>
         <li><a href="instagram.com">
-          <img src="img/instagram.svg" alt="Инстаграм" width="38" height="38">
+          <img src="img/instagram.svg" alt="Инстаграм" width="32" height="32">
         </a>
       </li>
         <li><a href="facebook.com">
-          <img src="img/facebook.svg" alt="Фейсбук" width="38" height="38">
+          <img src="img/facebook.svg" alt="Фейсбук" width="32" height="32">
         </a>
       </li>
-        <li><a href="vk.com"><img src="img/vk.svg" alt="Контакт" width="38" height="38">
+        <li><a href="vk.com"><img src="img/vk.svg" alt="Контакт" width="32" height="32">
         </a>
       </li>
       </ul>
       <ul class="footer-about-us">
-        <li><a href=" ">Для поставщиков</a></li>
-        <li><a href="">О производстве</a></li>
-        <li><a href="">Наши документы</a></li>
-        <li><a href="">Экологические стандарты</a></li>
+        <li><a href=" "><span class="for-provider">Для поставщиков</span></a></li>
+        <li><a href=""><span>О производстве</span></a></li>
+        <li><a href=""><span>Наши документы</span></a></li>
+        <li><a href=""><span>Экологические стандарты</span></a></li>
       </ul>
-      <p>
-        <img src="img/wisp.png" alt="developer-logo" width="40" height="40">
+      <p class="developer-logo">
+        <img src="img/wisp.png" alt="developer-logo" width="40" height="40" >
         <span>By Wandering Wisp</span>
       </p>
     </footer>
 
-    <section class="feedback-modal-window">
+    <!-- <section class="feedback-modal-window">
       <h2 class="visually-hidden"> форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <b>Мы обязательно вам ответим!</b>
@@ -224,7 +229,7 @@
           <a href="">Новая регистрация</a>
         </fieldset>
       </form>
-    </div>
+    </div> -->
 
   </main>
 
