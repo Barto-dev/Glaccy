@@ -482,7 +482,7 @@ a {
 
 .product-list {
   margin: 0;
-  margin-bottom: 35px; }
+  margin-bottom: 40px; }
 
 .product-list__items {
   padding: 0;
@@ -513,6 +513,7 @@ a {
   background-repeat: no-repeat; }
 
 .icecream p {
+  margin: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -523,20 +524,29 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .icecream img {
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin-bottom: 5px; }
 
 .icecream {
   width: 267px; }
 
 .icecream-price {
   position: absolute;
-  bottom: 20px;
+  bottom: 14px;
   left: 0;
   color: #ffffff;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   text-decoration: none; }
+
+.icecream-price span {
+  font-size: 30px; }
+
+.icecream-price img {
+  position: absolute;
+  left: 82px;
+  top: 5px; }
 
 .about-us {
   margin: 0;
@@ -557,11 +567,10 @@ a {
   font-weight: 500; }
 
 .about-us p {
-  position: relative; }
-
-.pseudo-icecream, .pseudo-cow {
   margin: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 24px;
+  padding: 0;
+  position: relative; }
 
 .about-us__first-column, .about-us__second-column {
   width: 540px;
@@ -571,7 +580,7 @@ a {
 .pseudo-icecream::before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -15px;
   left: -57px;
   width: 49px;
   height: 49px;
@@ -580,7 +589,7 @@ a {
 .pseudo-letter::before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -15px;
   left: -57px;
   width: 49px;
   height: 49px;
@@ -589,8 +598,8 @@ a {
 .pseudo-cow::before {
   content: "";
   position: absolute;
-  top: -20px;
-  left: -57px;
+  top: -15px;
+  left: -50px;
   width: 49px;
   height: 49px;
   background-image: url(../img/pseudo-cow.svg); }
@@ -598,8 +607,8 @@ a {
 .pseudo-thermometer::before {
   content: "";
   position: absolute;
-  top: -20px;
-  left: -57px;
+  top: -15px;
+  left: -50px;
   width: 49px;
   height: 49px;
   background-image: url(../img/pseudo-thermometer.svg); }
@@ -760,7 +769,7 @@ b.phone-number {
           align-items: flex-end;
   color: #fefefe;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 25px; }
 
 .footer-social,
@@ -853,14 +862,12 @@ b.phone-number {
   background-repeat: no-repeat; }
 
 .developer-logo {
-  margin: 0; }
+  margin: 0;
+  margin-left: 106px; }
 
 .developer-logo img {
   display: block;
   margin-left: auto; }
-
-.developer-logo span {
-  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 2px 2px 2px rgba(31, 112, 206, 0); }
 
 /*Форма обратной связи*/
 .feedback-modal-window {

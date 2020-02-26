@@ -1,6 +1,6 @@
 .product-list {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .product-list__items {
@@ -28,6 +28,7 @@
 }
 
 .icecream p {
+  margin: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -42,6 +43,7 @@
 
 .icecream img {
   border-radius: 50%;
+  margin-bottom: 5px;
 }
 
 .icecream {
@@ -49,7 +51,7 @@
 }
 .icecream-price {
   position: absolute;
-  bottom:20px;
+  bottom:14px;
   left: 0;
 
   color: $white;
@@ -57,4 +59,14 @@
   line-height: 45px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.icecream-price span {
+  font-size: 30px;
+}
+
+.icecream-price img {
+  position: absolute;
+  left: 82px;
+  top: 5px;
 }

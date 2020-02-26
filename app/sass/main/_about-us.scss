@@ -19,13 +19,13 @@
 }
 
 .about-us p {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
   position: relative;
 }
 
-.pseudo-icecream,.pseudo-cow {
-  margin: 0;
-  margin-bottom: 30px;
-}
+
 
 
 .about-us__first-column, .about-us__second-column {
@@ -38,7 +38,7 @@
 .pseudo-icecream::before {
   content: "";
   position: absolute;
-  top:-20px;
+  top:-15px;
   left: -57px;
   width: 49px;
   height: 49px;
@@ -48,7 +48,7 @@
 .pseudo-letter::before {
   content: "";
   position: absolute;
-  top:-20px;
+  top:-15px;
   left: -57px;
   width: 49px;
   height: 49px;
@@ -58,8 +58,8 @@
 .pseudo-cow::before {
   content: "";
   position: absolute;
-  top:-20px;
-  left: -57px;
+  top:-15px;
+  left: -50px;
   width: 49px;
   height: 49px;
   background-image: url(../img/pseudo-cow.svg);
@@ -68,8 +68,8 @@
 .pseudo-thermometer::before {
   content: "";
   position: absolute;
-  top:-20px;
-  left: -57px;
+  top:-15px;
+  left: -50px;
   width: 49px;
   height: 49px;
   background-image: url(../img/pseudo-thermometer.svg);
