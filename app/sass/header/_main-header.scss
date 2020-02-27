@@ -72,7 +72,72 @@
   position: relative;
 }
 
+.dropdown-catalog {
+  position: relative;
 
+  .dropdown-list {
+    display: none;
+    width: 144px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:45px;
+    right: -50px;
+
+    background-color: #f8f7f4;
+    border-radius: 5px;
+
+    li:first-child a {
+      position: relative;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    li:first-child a:before {
+      content: "";
+      position: absolute;
+      width: 128px;
+      height: 1px;
+      top: 30px;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        white-space: nowrap;
+
+        width: auto;
+        padding: 0;
+        padding: 5px 20px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #323232;
+      }
+
+      a:hover{
+        background-color: #fbded7;
+        border-radius: 0;
+      }
+      a:active {
+        background-color: #f6b5a5;
+      }
+      a:focus {
+        background-color: #d07058;
+        border-radius: 0
+      }
+    }
+  }
+}
+
+.dropdown-catalog:hover .dropdown-list {
+  display: block;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
 
  .site-navigation__line-1::after {
   content: "";
@@ -232,6 +297,81 @@
   filter: invert(100%);
 }
 
+.searh-modal {
+  position: relative;
+
+  form {
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    border-radius: 5px;
+    width: 340px;
+    background-color: #f8f7f4;
+    padding: 20px 16px;
+
+
+  }
+}
+
+.modal-inputs {
+font-family: inherit;
+color: #999;
+font-size: 14px;
+line-height: 24px;
+width: 100%;
+border: 1px solid #d3d3d2;
+border-radius: 3px;
+padding: 8px 15px;
+
+}
+
+.searh-modal:hover form,
+.enter-modal:hover div {
+  display: block;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.enter-modal {
+  position: relative;
+
+  div {
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    width: 280px;
+    background-color: #f8f7f4;
+    padding: 20px;
+    border-radius: 5px;
+
+    input {
+      margin-bottom: 21px;
+    }
+
+    button {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      padding: 13px 25px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    a {
+      color: #323232;
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: 400;
+
+      span {
+        border-bottom: 1px solid #adacaa;
+      }
+    }
+  }
+}
+
 
 .main-header p {
   margin: 0;
@@ -249,10 +389,6 @@
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
-}
-
-.dropdown-list {
-  display: none;
 }
 
 .breadcrumbs {

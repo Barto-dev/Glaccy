@@ -19,13 +19,14 @@
     <img src="img/logo.svg" alt="Логотип Glaccy Shop" class="main-header__logo" width="165" height="64">
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a href="#" class="site-navigation__line-1">Каталог</a>
+        <li class="dropdown-catalog">
+          <a href="catalog.html" class="site-navigation__line-1">Каталог</a>
           <ul class="dropdown-list">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="">Новинки</a></li>
+            <li><a href="">Сливочное</a></li>
+            <li><a href="">Щербеты</a></li>
+            <li><a href="">Фруктовый лед</a></li>
+            <li><a href="">Мелорин</a></li>
           </ul>
         </li>
         <li><a href="#" class="site-navigation__line-2">Доставка и оплата</a></li>
@@ -33,8 +34,26 @@
       </ul>
 
       <ul class="user-navigation">
-        <li><button class="user-navigation__search"><img src="img/loup.svg" alt="Поиск" width="17" height="17"></button></li>
-        <li><button class="user-navigation__enter">Вход</button></li>
+        <li class="searh-modal">
+          <button class="user-navigation__search">
+            <img src="img/loup.svg" alt="Поиск" width="17" height="17">
+          </button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" name="search" value="" placeholder="Что ищем?" aria-label="Окно поиска" class="modal-inputs">
+          </form>
+        </li>
+        <li class="enter-modal">
+          <button class="user-navigation__enter">Вход</button>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="email" class="modal-inputs" placeholder="Электронная почта">
+              <input type="password" name="password" class="modal-inputs" placeholder="Пароль">
+              <button type="sumbit" name="button" class="button">Войти</button>
+            </form>
+            <a href=""><span>Забыли пароль?</span></a>
+            <a href=""><span>Новая регистрация</span></a>
+          </div>
+        </li>
         <li><button class="user-navigation__empty-basket">Пусто</button></li>
       </ul>
     </nav>
