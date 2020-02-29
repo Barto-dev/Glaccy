@@ -24,7 +24,14 @@
   background-color: #fff;
   color: #323232;
   font-size: 14px;
+}
+
+.basket-hover {
   position: relative;
+}
+
+.basket-hover:hover .basket-table {
+  display: block;
 }
 
 .user-navigation__basket::before {
@@ -43,9 +50,17 @@
 }
 
 .basket-table {
+  display: none;
+  border-radius: 5px;
+  padding: 20px 15px 20px 20px;
+  width: 540px;
   background-color: #f8f7f4;
   position: absolute;
-  left: 50%;
+  right: 0;
+  top: 38px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+
 }
 
 .basket-items__all-price {
@@ -59,14 +74,67 @@
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
-
+  // border-collapse: collapse;
+  border-spacing: 5px 0;
   color: #323232;
+  border-bottom: 1px solid #cacac7;
+  margin-bottom: 15px;
 
+}
+
+.icecream-name {
+  width: 270px;
+  margin-right: 5px;
+}
+
+// .basket-items * {
+//   border: 1px solid #000;
+// }
+
+.basket-items caption {
+  caption-side: bottom;
+  text-align: right;
+  padding-top: 15px;
 }
 
 .basket-items td span {
   color: #999999;
 }
+
+.basket-items button {
+  position: relative;
+  // background-color: red;
+  width: 10px;
+  height: 10px;
+}
+
+.basket-table a {
+  display: block;
+  padding: 14px 16px;
+  width: 170px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.basket-items button::before,
+.basket-items button::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  width: 11px;
+  height: 1px;
+  background-color: #231f20;
+}
+
+.basket-items button::before {
+  transform: rotate(45deg);
+}
+
+.basket-items button::after {
+  transform: rotate(-45deg);
+}
+
 
 .breadcrumbs-wrapper {
   display: -webkit-flex;

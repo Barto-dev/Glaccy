@@ -4,33 +4,21 @@
   font-weight: 500;
 
   color: $white;
+  margin-bottom: 41px;
 }
 
 .all-creamy-icecream p {
-  text-decoration: underline;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+
+  span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 
 .all-creamy-icecream ul {
   list-style: none;
-}
-
-.pagination-list {
-  width: 230px;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-
-  color: $white;
-}
-
-.pagination-item-current {
-  color: #323232;
 }
 
 .creamy-icecreams {
@@ -40,16 +28,50 @@
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-  
+
 }
 
 .icecream-item {
   width: 267px;
   margin-right: 26px;
+  position: relative;
 }
 
-.icecream-item img {
+.icecream-item > img {
   height: 267px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.icecream-item span {
+  bottom: 110px;
+  left: 0;
+}
+
+.icecream-item button {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 200px;
+  padding: 12px;
+  left: 30px;
+  bottom: -10px;
+}
+
+.icecream-item:hover button {
+  display: block;
+}
+
+.icecream-item:hover::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: -10px;
+  background-color: rgba(#fff, 0.2);
+  box-shadow: 0px 20px 20px 0px rgba(248, 247, 244, 0.2);
+  border-radius: 5px;
+  width: 295px;
+  height: 405px;
 }
 
 .icecream-item:nth-child(4n) {
