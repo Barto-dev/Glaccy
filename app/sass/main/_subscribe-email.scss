@@ -24,6 +24,7 @@
 
 .subscribe-email fieldset {
   border: none;
+  padding: 0;
 }
 
 .subscribe-email p {
@@ -33,17 +34,18 @@
 }
 
 .subscribe-email input {
-  width: 365px;
+  width: 350px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #999;
   padding: 0;
   padding: 9px 0 9px 15px;
-  margin-right: 12px;
+  margin-right: 10px;
   margin-bottom: 34px;
   border: 1px solid #d3d3d2;
   border-radius: 3px;
+
 }
 
 .subscribe-email .button {

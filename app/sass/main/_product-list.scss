@@ -18,6 +18,11 @@
   position: relative;
 }
 
+.choise-icecream:hover p span{
+  color: #ffbc9e;
+  border-color: #ffbc9e;
+}
+
 .choise-icecream::before {
   content: "";
   position: absolute;
