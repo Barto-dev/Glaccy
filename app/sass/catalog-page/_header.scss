@@ -1,20 +1,9 @@
-// .current-page,
-// a.current-page:hover {
-//   background-color: #d07058;
-//   color: $white;
-// }
-
-
-
-
-// button.user-navigation__basket  {
-//   font-size: 14px;
-//   line-height: 16px;
-//   font-weight: 500;
-//   color: #323232;
-//
-//   background-color: #f7f6f3;
-// }
+.current-page>a
+ {
+  background-color: #d07058;
+  color: $white;
+  border-radius: 35px;
+}
 
 .inner-page .user-navigation__basket {
   padding: 8px 35px 10px 45px;
@@ -87,10 +76,6 @@
   margin-right: 5px;
 }
 
-// .basket-items * {
-//   border: 1px solid #000;
-// }
-
 .basket-items caption {
   caption-side: bottom;
   text-align: right;
@@ -103,7 +88,6 @@
 
 .basket-items button {
   position: relative;
-  // background-color: red;
   width: 10px;
   height: 10px;
 }

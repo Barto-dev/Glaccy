@@ -1,0 +1,88 @@
+.feedback-modal-window {
+  display: none;
+  position: fixed;
+  width: 480px;
+  top:50%;
+  left: 50%;
+  margin-left: -240px;
+  margin-top: -240px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 20px 25px 25px 25px;
+  z-index: 2;
+
+  p {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999;
+    padding: 15px;
+    border: 2px solid #d3d3d2;
+    border-radius: 5px;
+  }
+
+  input {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 430px;
+    margin-bottom: 25px;
+  }
+
+  button[type="submit"] {
+    font-size: 18px;
+    line-height: inherit;
+    font-weight: 700;
+    padding: 10px 24px;
+    cursor: pointer;
+  }
+
+  .feedback-modal-window__close-modal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    top: 25px;
+    right: 35px;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  .feedback-modal-window__close-modal::before,
+  .feedback-modal-window__close-modal::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #231f20;
+  }
+  .feedback-modal-window__close-modal::before {
+    transform: rotate(45deg);
+  }
+
+  .feedback-modal-window__close-modal::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.feedback-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}

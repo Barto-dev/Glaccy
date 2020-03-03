@@ -62,7 +62,8 @@
   display: block;
 }
 
-.icecream-item:hover::before {
+.icecream-item:hover::before, 
+.icecream-item:focus::before {
   content: "";
   position: absolute;
   left: -14px;
