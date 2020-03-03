@@ -27,15 +27,44 @@ body {
   line-height: 24px;
   font-weight: 500;
   color: #ffffff;
-
   background-image: url(../img/backlight.png);
+
+
+}
+
+.slider-1 {
+
   background-image: url(../img/promoaction-1.png);
   background-color: #87a092;
 
   background-position: center top;
   background-repeat: no-repeat;
-
+  transition: background-color 0.6s linear;
+  transition: background-image 0.3s linear;
 }
+
+.slider-2 {
+
+  background-image: url(../img/promoaction-2.png);
+  background-color: #8996a6;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  transition: background-color 0.6s linear;
+  transition: background-image 0.3s linear;
+}
+
+.slider-3 {
+
+  background-image: url(../img/promoaction-3.png);
+  background-color: #9d8b84;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  transition: background-color 0.6s linear;
+  transition: background-image 0.3s linear;
+}
+
 
 a {
   text-decoration: none;
