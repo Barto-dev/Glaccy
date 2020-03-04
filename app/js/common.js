@@ -55,3 +55,37 @@ slide3.addEventListener("click", function (evt) {
 //////////Форма//////////////////
 ////////Обратной/////////////////
 //////////Связи//////////////////
+
+let modalFeedback = document.querySelector(".feedback-modal-window");
+let closeFeedbackWindow = modalFeedback.querySelector(".feedback-modal-window__close-modal");
+let overlayFeedback = document.querySelector(".feedback-overlay");
+let openFeedbackWindow = document.querySelector(".open-modal");
+let nameInput = modalFeedback.querySelector("[name=name]");
+
+openFeedbackWindow.addEventListener("click", function (evt) {
+    //Убирает поведение по умолчанию
+    evt.preventDefault();
+    //Убирает анимацию закрытия, чтоб появившийся элемент при открытия не уменьшился.
+    modalFeedback.classList.remove("close-animation");
+    //Добавляет анимацию и делает видимым модальное окно и оверлей
+    modalFeedback.classList.add("modal-animation");
+    modalFeedback.classList.add("show-modal");
+    overlayFeedback.classList.add("show-modal");
+    //При открытии формы автоматически помещает фокус в поле ввода имени
+    nameInput.focus();
+});
+
+closeFeedbackWindow.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    //Убирает анимацию открытия
+    modalFeedback.classList.remove("modal-animation");
+    //Добавляет анимацию закрытия
+    modalFeedback.classList.add("close-animation");
+    //после проигрывания анимации скрывает модалку, хоть она уже и скрыта но влияет на доступность
+    setTimeout(function () {
+        modalFeedback.classList.remove("show-modal")
+    }, 600);
+    //скрывает оверлей
+    overlayFeedback.classList.remove("show-modal");
+    
+});
