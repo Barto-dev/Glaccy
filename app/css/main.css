@@ -141,6 +141,7 @@ a {
 
 .inner-page {
   background-image: none;
+  background-color: #87a092;
   background-image: url(../img/backlight.png);
   background-position: 0 0;
   background-repeat: repeat-x; }
@@ -280,41 +281,8 @@ a {
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4); }
 
-.site-navigation__line-1::after {
-  content: "";
-  position: absolute;
-  left: 15%;
-  bottom: 21%;
-  width: 60px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2); }
-
-.site-navigation__line-2::after {
-  content: "";
-  position: absolute;
-  left: 8.5%;
-  bottom: 21%;
-  width: 142px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2); }
-
-.site-navigation__line-2::after {
-  content: "";
-  position: absolute;
-  left: 8.5%;
-  bottom: 21%;
-  width: 142px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2); }
-
-.site-navigation__line-3::after {
-  content: "";
-  position: absolute;
-  left: 12.5%;
-  bottom: 21%;
-  width: 90px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2); }
+.site-navigation span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .user-navigation {
   margin: 0;
@@ -956,6 +924,14 @@ b.phone-number {
   border: 3px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%; }
 
+.footer-social a:hover path,
+.footer-social a:hover rect {
+  fill: #fff; }
+
+.footer-social a:active path,
+.footer-social a:active rect {
+  fill: #e9e9e9; }
+
 .main-footer a {
   color: #fefefe;
   font-size: 13px;
@@ -1210,6 +1186,10 @@ b.phone-number {
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
 
+.feedback-modal-window input:valid,
+.feedback-modal-window textarea:valid {
+  color: #000000; }
+
 .feedback-overlay {
   display: none;
   position: fixed;
@@ -1224,8 +1204,8 @@ b.phone-number {
   display: block; }
 
 .modal-animation {
-  -webkit-animation: magnification 0.4s linear;
-          animation: magnification 0.4s linear; }
+  -webkit-animation: magnification 0.3s linear;
+          animation: magnification 0.3s linear; }
 
 .close-animation {
   -webkit-transition: 0.4s all;
@@ -1417,6 +1397,9 @@ b.phone-number {
   margin-right: 15px; }
 
 .filter-list-item:nth-child(1) select {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   border-radius: 20px;
   background-color: rgba(248, 247, 244, 0.2);
   color: #fff;
@@ -1426,6 +1409,9 @@ b.phone-number {
   text-align: center; }
   .filter-list-item:nth-child(1) select option {
     color: #000; }
+
+.filter-list-item:nth-child(1) select:hover {
+  color: #000; }
 
 .filter-list-item:nth-child(2) {
   width: 220px; }
@@ -1476,34 +1462,69 @@ li.fat-value:last-child {
 .checkbox-window {
   width: 23px;
   height: 23px;
-  border: 2px solid #eef1ef;
+  border: 2px solid #e6ebe9;
   border-radius: 3px;
   position: absolute;
   left: -28px;
   bottom: -1px; }
+  .checkbox-window svg {
+    display: none; }
 
 .filler input[type="checkbox"]:checked + .checkbox-window {
   width: 27px;
   border: none;
-  background-image: url(../img/checkbox-on.svg); }
+  border-radius: 0; }
+
+.checkbox-window + span {
+  color: #e6ebe9; }
+
+.filler input[type="checkbox"]:checked + .checkbox-window svg {
+  display: block; }
+
+.filler input[type="checkbox"]:hover + .checkbox-window {
+  border-color: #fff; }
+
+.filler input[type="checkbox"]:hover + .checkbox-window + span {
+  color: #fff; }
+
+.filler input[type="checkbox"]:hover + .checkbox-window path,
+.filler input[type="checkbox"]:hover + .checkbox-window polygon {
+  fill: #fff; }
 
 .filler input[type="checkbox"]:focus + .checkbox-window {
-  border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color; }
 
 .radio-button-window {
   width: 25px;
   height: 25px;
-  border: 3px solid #eef1ef;
+  border: 3px solid #e6ebe9;
   position: absolute;
   border-radius: 50%;
   left: -28px;
   bottom: -2px; }
 
+.radio-button-window + span {
+  color: #e6ebe9; }
+
+.radio-button-window svg {
+  display: none; }
+
 .fat-value input[type="radio"]:checked + .radio-button-window {
-  border: none;
-  background-image: url(../img/radio-on.svg); }
+  border: none; }
+
+.fat-value input[type="radio"]:checked + .radio-button-window svg {
+  display: block; }
+
+.fat-value input[type="radio"]:hover + .radio-button-window {
+  border-color: #fff; }
+
+.fat-value input[type="radio"]:hover + .radio-button-window + span {
+  color: #fff; }
+
+.fat-value input[type="radio"]:hover + .radio-button-window path,
+.fat-value input[type="radio"]:hover + .radio-button-window circle {
+  fill: #fff; }
 
 .fat-value input[type="radio"]:focus + .radio-button-window {
   border-color: #663d15;
@@ -1537,6 +1558,9 @@ li.fat-value:last-child {
   list-style: none; }
 
 .filter-list-item .filter__button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   background-color: rgba(248, 247, 244, 0.2);
   border: 2px solid #ffffff;
   color: #ffffff;
@@ -1548,6 +1572,22 @@ li.fat-value:last-child {
   margin-right: 0;
   cursor: pointer; }
 
+.filter-list-item .filter__button:hover,
+.filter-list-item .filter__button:focus {
+  color: #323232;
+  background-color: #fbfcfb;
+  outline: none; }
+
+.filter-list-item .filter__button:active {
+  border: none;
+  color: #323232;
+  background-color: #ededed;
+  -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+          box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4); }
+
+label {
+  cursor: pointer; }
+
 .all-creamy-icecream {
   font-size: 16px;
   line-height: 22px;
@@ -1556,11 +1596,19 @@ li.fat-value:last-child {
   margin-bottom: 41px; }
 
 .all-creamy-icecream p {
+  position: relative;
   text-align: center;
   margin: 0;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  z-index: 2; }
   .all-creamy-icecream p span {
+    color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.all-creamy-icecream p:hover span,
+.all-creamy-icecream p:active span {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3); }
 
 .all-creamy-icecream ul {
   list-style: none; }
@@ -1600,7 +1648,8 @@ li.fat-value:last-child {
   left: 30px;
   bottom: -10px; }
 
-.icecream-item:hover button {
+.icecream-item:hover button,
+.icecream-item:focus button {
   display: block; }
 
 .icecream-item:hover::before,

@@ -8,12 +8,23 @@
 }
 
 .all-creamy-icecream p {
+  position: relative;
   text-align: center;
   margin: 0;
   margin-bottom: 40px;
-
+  z-index: 2;
+  
   span {
+    color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.all-creamy-icecream p:hover,
+.all-creamy-icecream p:active{
+  span {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(#f9ac9f, 0.3);
   }
 }
 
@@ -28,7 +39,6 @@
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .icecream-item {
@@ -58,7 +68,8 @@
   bottom: -10px;
 }
 
-.icecream-item:hover button {
+.icecream-item:hover button,
+.icecream-item:focus button{
   display: block;
 }
 

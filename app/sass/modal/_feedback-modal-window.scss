@@ -141,6 +141,12 @@
   }
 }
 
+ .feedback-modal-window input:valid,
+ .feedback-modal-window textarea:valid{
+   color: #000000;
+   //font-weight: 500;
+ }
+
 .feedback-overlay {
   display: none;
   position: fixed;
@@ -153,17 +159,16 @@
 }
 
 
-
 .show-modal {
   display: block;
 }
 
 .modal-animation {
-  animation: magnification 0.4s linear;
+  animation: magnification 0.3s linear;
 }
 
 .close-animation {
   transition: 0.4s all;
   transform: scale(0);
-
 }
+

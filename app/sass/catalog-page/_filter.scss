@@ -44,6 +44,9 @@
 }
 
 .filter-list-item:nth-child(1) select {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   border-radius: 20px;
   background-color: rgba(248, 247, 244, 0.2);
   color: #fff;
@@ -55,6 +58,10 @@
   option {
     color: #000;
   }
+}
+
+.filter-list-item:nth-child(1) select:hover {
+  color:#000;
 }
 
 .filter-list-item:nth-child(2) {
@@ -121,50 +128,100 @@ li.fat-value:last-child {
 .checkbox-window {
   width: 23px;
   height: 23px;
-  border: 2px solid #eef1ef;
+  border: 2px solid #e6ebe9;
   border-radius: 3px;
   position: absolute;
   left: -28px;
   bottom: -1px;
+
+  svg {
+    display: none;
+  }
 }
 
 .filler input[type="checkbox"]:checked + .checkbox-window {
   width: 27px;
   border: none;
-  background-image: url(../img/checkbox-on.svg);
+  border-radius: 0;
 }
 
+.checkbox-window + span {
+  color: #e6ebe9;
+}
+
+.filler input[type="checkbox"]:checked + .checkbox-window svg {
+  display: block;
+}
+
+.filler input[type="checkbox"]:hover + .checkbox-window {
+  border-color: #fff;
+}
+
+.filler input[type="checkbox"]:hover + .checkbox-window + span {
+  color: #fff;
+}
+
+.filler input[type="checkbox"]:hover + .checkbox-window path,
+.filler input[type="checkbox"]:hover + .checkbox-window polygon {
+  fill: #fff;
+}
+
+
+//TODO
 .filler input[type="checkbox"]:focus + .checkbox-window {
-  border-color: #663d15;
+
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
 
-
-
 .radio-button-window {
   width: 25px;
   height: 25px;
-  border: 3px solid #eef1ef;
+  border: 3px solid #e6ebe9;
   position: absolute;
   border-radius: 50%;
   left: -28px;
   bottom: -2px;
 }
 
+.radio-button-window + span {
+  color: #e6ebe9;
+}
+
+.radio-button-window svg{
+  display: none;
+}
 
 
 .fat-value input[type="radio"]:checked + .radio-button-window {
   border: none;
-  background-image: url(../img/radio-on.svg);
 }
 
+.fat-value input[type="radio"]:checked + .radio-button-window svg {
+  display: block;
+}
+
+.fat-value input[type="radio"]:hover + .radio-button-window {
+  border-color: #fff;
+}
+
+.fat-value input[type="radio"]:hover + .radio-button-window + span {
+  color: #fff;
+}
+
+.fat-value input[type="radio"]:hover + .radio-button-window path,
+.fat-value input[type="radio"]:hover + .radio-button-window circle {
+  fill: #fff;
+}
+
+//TODO
 .fat-value input[type="radio"]:focus + .radio-button-window {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
+
 
 .form-filter {
   width: 863px;
@@ -199,6 +256,9 @@ li.fat-value:last-child {
 }
 
 .filter-list-item .filter__button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   background-color: rgba(248, 247, 244, 0.2);
   border: 2px solid $white;
   color: $white;
@@ -209,5 +269,24 @@ li.fat-value:last-child {
   margin-top: 20px;
   margin-right: 0;
   cursor: pointer;
-
 }
+
+.filter-list-item .filter__button:hover,
+.filter-list-item .filter__button:focus{
+  color: #323232;
+  background-color: #fbfcfb;
+  outline: none;
+}
+
+.filter-list-item .filter__button:active {
+  border: none;
+  color: #323232;
+  background-color: rgb(237, 237, 237);
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+}
+
+label {
+  cursor: pointer;
+}
+
+

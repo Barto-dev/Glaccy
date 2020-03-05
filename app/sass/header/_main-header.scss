@@ -141,44 +141,8 @@
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
- .site-navigation__line-1::after {
-  content: "";
-  position: absolute;
-  left: 15%;
-  bottom: 21%;
-  width: 60px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.site-navigation__line-2::after {
- content: "";
- position: absolute;
- left: 8.5%;
- bottom: 21%;
- width: 142px;
- height: 1px;
- background-color: rgba(255, 255, 255, 0.2);
-}
-
-.site-navigation__line-2::after {
- content: "";
- position: absolute;
- left: 8.5%;
- bottom: 21%;
- width: 142px;
- height: 1px;
- background-color: rgba(255, 255, 255, 0.2);
-}
-
-.site-navigation__line-3::after {
- content: "";
- position: absolute;
- left: 12.5%;
- bottom: 21%;
- width: 90px;
- height: 1px;
- background-color: rgba(255, 255, 255, 0.2);
+.site-navigation span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .user-navigation {
