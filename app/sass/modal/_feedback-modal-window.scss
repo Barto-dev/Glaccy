@@ -84,14 +84,23 @@
     margin-bottom: 22px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
-    color: #999;
+    color: #000000;
+    font-weight: 500;
+    //font-weight: 400;
+    //color: #999;
     padding: 15px;
-    border: 2px solid #d3d3d2;
+    border: 1px solid #d3d3d2;
     border-radius: 5px;
+  }
+
+  input:hover,
+  textarea:hover {
+    border: 2px solid #c7c6c5;
+    padding: 14px;
   }
 
   input {
@@ -103,6 +112,8 @@
     width: 430px;
     margin-bottom: 25px;
   }
+
+
 
   button[type="submit"] {
     font-size: 18px;
@@ -141,10 +152,10 @@
   }
 }
 
- .feedback-modal-window input:valid,
- .feedback-modal-window textarea:valid{
-   color: #000000;
-   //font-weight: 500;
+ .feedback-modal-window input::placeholder,
+ .feedback-modal-window textarea::placeholder{
+    font-weight: 400;
+    color: #999;
  }
 
 .feedback-overlay {
@@ -172,3 +183,6 @@
   transform: scale(0);
 }
 
+.modal-error {
+  animation: shake 0.4s;
+}

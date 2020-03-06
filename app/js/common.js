@@ -56,17 +56,24 @@ slide3.addEventListener("click", function (evt) {
 ////////Обратной/////////////////
 //////////Связи//////////////////
 
+//Открытие и закрытие модалки
 let modalFeedback = document.querySelector(".feedback-modal-window");
 let closeFeedbackWindow = modalFeedback.querySelector(".feedback-modal-window__close-modal");
 let overlayFeedback = document.querySelector(".feedback-overlay");
 let openFeedbackWindow = document.querySelector(".open-modal");
 let nameInput = modalFeedback.querySelector("[name=name]");
 
+//Анимаци при отправке
+let modalForm = modalFeedback.querySelector("form");
+let emailInput = document.getElementById("feedback-user-email");
+let textInput = document.getElementById("feedback-text");
+
 openFeedbackWindow.addEventListener("click", function (evt) {
     //Убирает поведение по умолчанию
     evt.preventDefault();
     //Убирает анимацию закрытия, чтоб появившийся элемент при открытия не уменьшился.
     modalFeedback.classList.remove("close-animation");
+    modalFeedback.classList.remove("modal-error");
     //Добавляет анимацию и делает видимым модальное окно и оверлей
     modalFeedback.classList.add("modal-animation");
     modalFeedback.classList.add("show-modal");
@@ -87,5 +94,46 @@ closeFeedbackWindow.addEventListener("click", function (evt) {
     }, 600);
     //скрывает оверлей
     overlayFeedback.classList.remove("show-modal");
-    
 });
+
+window.addEventListener("keyup", function (evt) {
+    if (evt.keyCode === 27 && modalFeedback.classList.contains("show-modal")) {
+    modalFeedback.classList.remove("modal-animation");
+    modalFeedback.classList.add("close-animation");
+    setTimeout(function () {
+        modalFeedback.classList.remove("show-modal")
+    }, 100);
+    overlayFeedback.classList.remove("show-modal");
+    }
+});
+
+
+
+
+
+modalForm.addEventListener("submit", function (evt) {
+    if (!nameInput.value || !emailInput.value || !textInput.value ) {
+        evt.preventDefault();
+        modalFeedback.classList.remove('modal-error');
+        modalFeedback.offsetWidth = modalFeedback.offsetWidth;
+        modalFeedback.classList.add("modal-error");
+    }
+});
+
+/////////////////////////////////
+////////Автофокусы форм//////////
+/////////////////////////////////
+
+let searchModal = document.querySelector(".search-modal");
+let enterModal = document.querySelector(".enter-modal");
+
+searchModal.addEventListener("mouseenter", function(evt){
+    evt.preventDefault();
+    searchModal.querySelector(".modal-inputs").focus();
+});
+
+enterModal.addEventListener("mouseenter", function (evt) {
+    evt.preventDefault();
+    enterModal.querySelector("[type='email']").focus();
+});
+
