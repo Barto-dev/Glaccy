@@ -1,12 +1,30 @@
-/////////////////////////////////
-/////////// Слайдер//////////////
-/////////////////////////////////
+//Слайдер
 let slide1 = document.querySelector('.slide1');
 let slide2 = document.querySelector('.slide2');
 let slide3 = document.querySelector('.slide3');
 let bodyChangeSlide = document.querySelector('body');
 let goodDealName = document.querySelector('.good-deal__name');
 let currentSlide = "slider-1";
+
+//Открытие и закрытие модалки
+let modalFeedback = document.querySelector(".feedback-modal-window");
+let closeFeedbackWindow = modalFeedback.querySelector(".feedback-modal-window__close-modal");
+let overlayFeedback = document.querySelector(".feedback-overlay");
+let openFeedbackWindow = document.querySelector(".open-modal");
+let nameInput = modalFeedback.querySelector("[name=name]");
+
+//Анимаци при отправке
+let modalForm = modalFeedback.querySelector("form");
+let emailInput = document.getElementById("feedback-user-email");
+let textInput = document.getElementById("feedback-text");
+
+//Local storage
+let isStorageSupport = true;
+let nameStorage="";
+
+/////////////////////////////////
+/////////// Слайдер//////////////
+/////////////////////////////////
 
 slide1.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -52,21 +70,18 @@ slide3.addEventListener("click", function (evt) {
     }
 });
 
+///////////////////////////
+////////Local//////////////
+//////////storage//////////
+try {
+    nameStorage=localStorage.getItem("name");
+} catch (err) {
+    isStorageSupport = false;
+}
+
 //////////Форма//////////////////
 ////////Обратной/////////////////
 //////////Связи//////////////////
-
-//Открытие и закрытие модалки
-let modalFeedback = document.querySelector(".feedback-modal-window");
-let closeFeedbackWindow = modalFeedback.querySelector(".feedback-modal-window__close-modal");
-let overlayFeedback = document.querySelector(".feedback-overlay");
-let openFeedbackWindow = document.querySelector(".open-modal");
-let nameInput = modalFeedback.querySelector("[name=name]");
-
-//Анимаци при отправке
-let modalForm = modalFeedback.querySelector("form");
-let emailInput = document.getElementById("feedback-user-email");
-let textInput = document.getElementById("feedback-text");
 
 openFeedbackWindow.addEventListener("click", function (evt) {
     //Убирает поведение по умолчанию
@@ -79,7 +94,13 @@ openFeedbackWindow.addEventListener("click", function (evt) {
     modalFeedback.classList.add("show-modal");
     overlayFeedback.classList.add("show-modal");
     //При открытии формы автоматически помещает фокус в поле ввода имени
-    nameInput.focus();
+    if (nameStorage) {
+        nameInput.value = nameStorage;
+        emailInput.focus()
+    } else {
+        nameInput.focus();
+    }
+    
 });
 
 closeFeedbackWindow.addEventListener("click", function (evt) {
@@ -107,16 +128,16 @@ window.addEventListener("keyup", function (evt) {
     }
 });
 
-
-
-
-
 modalForm.addEventListener("submit", function (evt) {
     if (!nameInput.value || !emailInput.value || !textInput.value ) {
         evt.preventDefault();
         modalFeedback.classList.remove('modal-error');
         modalFeedback.offsetWidth = modalFeedback.offsetWidth;
         modalFeedback.classList.add("modal-error");
+    } else {
+        if(isStorageSupport) {
+            localStorage.setItem("name", nameInput.value);
+        }
     }
 });
 
@@ -136,4 +157,6 @@ enterModal.addEventListener("mouseenter", function (evt) {
     evt.preventDefault();
     enterModal.querySelector("[type='email']").focus();
 });
+
+
 
